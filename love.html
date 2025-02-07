@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+ <title>BABY</title>   
+ <style>
+   h1{text-align:center;color:blueviolet} 
+ </style>
+ <img src="1.gif" class="center" style="width:200px;height:200px;">
+ <style>
+    .center{display: block;margin-left: auto;margin-right: auto;}
+ </style>
+ <H1>WILL YOU BE MY VALENTINE?</H1>
+
+</head>
+<body style="background-color:pink;">
+    <div class="button-container">
+        <a href="love2.html">
+        <button id="yesbutton" type="button">YES</button>
+        </a>
+        <button type="button" id="noButton">NO</button>
+    </div>
+
+    <style>
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px; 
+        }
+        button {
+            background-color: violet;
+            color: white;
+            width: 100px;
+            height: 100px;
+            font-size: 16px;
+        }
+    </style>
+
+<script>
+    
+    let noButton = document.getElementById("noButton");
+    let clickCount = 0;
+
+    noButton.addEventListener("click", function() {
+        clickCount++;
+
+        if (clickCount === 1) {
+            this.innerText = "REALLY NO?";
+            this.style.backgroundColor = "violet";
+        } else if (clickCount === 2) {
+            this.innerText = "welnaby ya kouky!!!";
+            this.style.backgroundColor = "violet";
+        } else if (clickCount === 3) {
+            this.innerText = "oki:(";
+            this.style.backgroundColor = "violet";
+        } else {
+            this.style.display = "none"; // Hides the button
+        }
+    });
+    
+</script>
+
+
+</body>
+</html>
